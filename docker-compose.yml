@@ -5,12 +5,12 @@ volumes:
     driver: local
 services:
   jupyterlab:
-    image: cbadenes/spark-jupyter:0.0.2
+    image: cbadenes/spark-jupyter:0.0.1
     container_name: jupyterlab
     ports:
       - 8889:8888
     volumes:
-      - shared-workspace:/opt/workspace
+      - shared-workspace:/opt/workspace    
   spark-master:
     image: cbadenes/spark-master:0.0.1
     container_name: spark-master

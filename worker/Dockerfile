@@ -1,7 +1,7 @@
-FROM bigdatainf/spark-base:0.0.1
+FROM cbadenes/spark-base:0.0.1
 
 # -- Runtime
-ARG spark_version=2.4.5
+ARG spark_version=3.4.0
 
 ARG spark_worker_web_ui=8081
 
