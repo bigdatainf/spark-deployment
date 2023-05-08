@@ -5,7 +5,7 @@ volumes:
     driver: local
 services:
   jupyterlab:
-    image: cbadenes/spark-jupyter:0.0.1
+    image: cbadenes/spark-jupyter:0.0.2
     container_name: jupyterlab
     ports:
       - 8889:8888
