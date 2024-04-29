@@ -34,6 +34,9 @@ ENV SPARK_MASTER_HOST spark-master
 ENV SPARK_MASTER_PORT 7077
 ENV PYSPARK_PYTHON python3
 
+
+RUN curl https://repos.spark-packages.org/graphframes/graphframes/0.8.3-spark3.4-s_2.12/graphframes-0.8.3-spark3.4-s_2.12.jar -o /usr/bin/spark-3.4.0-bin-hadoop3/jars/graphframes-0.8.3-spark3.4-s_2.12.jar
+
 # -- Runtime
 
 WORKDIR ${SPARK_HOME}
