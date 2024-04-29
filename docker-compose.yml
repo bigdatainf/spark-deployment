@@ -3,6 +3,10 @@ volumes:
   shared-workspace:
     name: "hadoop-distributed-file-system"
     driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data
 services:
   jupyterlab:
     image: ghcr.io/bigdatainf/spark-jupyter:0.0.1
