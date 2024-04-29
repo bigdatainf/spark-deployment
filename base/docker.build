@@ -1,1 +1,1 @@
-docker build -t cbadenes/spark-base:0.0.1 .
+docker build -t ghcr.io/bigdatainf/spark-base:0.0.1 .

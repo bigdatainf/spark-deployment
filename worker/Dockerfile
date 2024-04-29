@@ -1,4 +1,4 @@
-FROM cbadenes/spark-base:0.0.1
+FROM ghcr.io/bigdatainf/spark-base:0.0.1
 
 # -- Runtime
 ARG spark_version=3.4.0
